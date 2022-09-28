@@ -1,0 +1,56 @@
+.btn-0{
+    height: 40px;
+    width: 184px;
+    border-radius: 62px;
+    background: linear-gradient($color-primary,$color-secondary);
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    box-shadow: 0px 11px 15px rgb(107 105 105 / 21%);
+    &:active{
+        box-shadow: 0px 11px 15px rgb(107, 105, 105);
+        background: linear-gradient(356deg,
+        lighten(#9356DC, 5%) 33%,
+        lighten(#FF79DA, 5%) 100%);
+    }
+}
+.btn-0__modif{
+    text-align: center;
+    padding-top: 39px;
+}
+
+
+.btn{
+    height: 60px;
+    width: 95%;
+    background-color: #efefef;
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-block: 10px;
+    @include DisplAlign;
+    &:hover{
+        background: linear-gradient(356deg,
+        lighten(#9356DC, 5%) 33%,
+        lighten(#FF79DA, 5%) 100%);
+    }
+    
+}
+
+.span{
+    margin-right: 27px;
+}
+
+.numero{
+    border-radius: 12px;
+    background-color: $color-primary;
+    font-size: 20px;
+    width: 22px;
+    color: white;
+    right: 12px;
+    position: relative;
+}
+

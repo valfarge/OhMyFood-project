@@ -1,0 +1,24 @@
+.container-localisation {
+    width: 100%;
+    height: 48px;
+    background-color: #f4f1f1;
+    border-top: 0.5px solid #a7a1a1;
+    @include FlexMid;
+  }
+
+.container-second{
+    text-align: center;
+    width: 100%;
+    height: 270px;
+    margin: 0;
+    background-color: #efefef;
+    padding-block: 12px;
+}
+.container-third{
+    height: 320px;
+
+}
+.container-four{
+  height: 1144px;
+  background-color: #f4f1f1;
+}
