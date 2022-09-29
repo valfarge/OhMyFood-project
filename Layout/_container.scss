@@ -4,6 +4,9 @@
     background-color: #f4f1f1;
     border-top: 0.5px solid #a7a1a1;
     @include FlexMid;
+    &__Paris{
+      font-family: "Roboto", sans-serif;
+    }
   }
 
 .container-second{
@@ -16,9 +19,26 @@
 }
 .container-third{
     height: 320px;
+  &__block{
+    @include mobile-only(){
+      display: flex;
+      margin: 10px;
+      margin-block: 3px;
+    }
+  }
 
 }
 .container-four{
   height: 1144px;
   background-color: #f4f1f1;
+  @include mobile-only(){
+    position: relative;
+    bottom: 95px;
+    height: 380px;
+  }
+}
+.ContainerAnimation{
+  @include mobile-only(){
+    display: flex;
+  }
 }

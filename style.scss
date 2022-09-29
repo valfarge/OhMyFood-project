@@ -10,8 +10,14 @@
 @import './Layout/footer';
 @import './Base/animation';
 
+
 .box-reservation{
     @include size;
+ }
+ .cardBlock{
+    @include mobile-only(){
+        display: flex;
+    }
  }
  
  .cardRestaurant{
@@ -21,6 +27,10 @@
      @include size;
      box-shadow: 0px 11px 15px rgb(107, 105, 105);
      margin-block: 20px;
+     position: relative;
+     @include mobile-only(){
+        width: 22%;
+     }
  }
  img{
      @include Imgs;
@@ -59,6 +69,10 @@
 .Container-menu__img{
     @include Imgs;
     object-position: bottom;
+    @include mobile-only(){
+        object-position: center;
+        height: 300px;
+    }
 }
 
 .SecondContainerMenu{
@@ -68,6 +82,9 @@
     margin-top: -51px;
     z-index: 1;
     position: relative;
+    @include mobile-only(){
+        height: 400px;
+    }
 }
 .ContainerTitre{
     @include DisplayJustify;
@@ -153,8 +170,24 @@
     background-clip: text;
 }
 
+.Nouveau::after{
+    content: "Nouveau";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: $mint;
+    color: #278870;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4862745098);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding: 8px 13px 6px 13px;
+   
 
+}
     
+
 
 
 

@@ -43,3 +43,9 @@
      object-fit: cover;
      border-radius: 10px 10px 0px 0px;
 }
+
+@mixin mobile-only {
+    @media (min-width: 1440px) {
+        @content;
+      }
+  }

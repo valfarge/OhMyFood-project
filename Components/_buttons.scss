@@ -32,6 +32,9 @@
     font-weight: 500;
     margin-block: 10px;
     @include DisplAlign;
+    @include mobile-only(){
+        width: 25%;
+    }
     &:hover{
         background: linear-gradient(356deg,
         lighten(#9356DC, 5%) 33%,
