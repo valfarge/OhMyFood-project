@@ -30,23 +30,29 @@
      position: relative;
      @include mobile-only(){
         width: 22%;
+        &:hover{
+            transform: scale(1.1);
+        }
      }
  }
  img{
      @include Imgs;
  }
-
- .cardRestaurant__description{
-     @include Margin-Font;
-     @include DisplayJustify;
-     font-weight: 700;
-     
+ .card-lien{
+    color: black;
  }
- .cardRestaurant__lieux{
-     @include Margin-Font;
-     font-weight: 200;
-     margin-top:4px;
- }
+.cardRestaurant__description{
+    margin-left: 8px;
+    .cardRestaurant__titre{
+        @include DisplayJustify;
+        @include Margin-Font;
+        font-weight: 500;
+     }
+     .cardRestaurant__description--lieux{
+        @include Margin-Font;
+        font-weight: 200;
+    }
+}
 
 
  .box-reservation__Resevation,h2{ 

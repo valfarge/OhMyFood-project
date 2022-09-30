@@ -140,6 +140,11 @@ h1 {
 .span {
   margin-right: 27px;
 }
+@media (min-width: 1440px) {
+  .span {
+    font-size: medium;
+  }
+}
 
 .numero {
   border-radius: 12px;
@@ -311,6 +316,9 @@ a {
   .cardRestaurant {
     width: 22%;
   }
+  .cardRestaurant:hover {
+    transform: scale(1.1);
+  }
 }
 
 img {
@@ -320,20 +328,25 @@ img {
   border-radius: 10px 10px 0px 0px;
 }
 
+.card-lien {
+  color: black;
+}
+
 .cardRestaurant__description {
-  font-family: "Roboto", sans-serif;
-  margin-left: 9px;
+  margin-left: 8px;
+}
+.cardRestaurant__description .cardRestaurant__titre {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-left: 9px;
+  font-weight: 500;
 }
-
-.cardRestaurant__lieux {
+.cardRestaurant__description .cardRestaurant__description--lieux {
   font-family: "Roboto", sans-serif;
   margin-left: 9px;
   font-weight: 200;
-  margin-top: 4px;
 }
 
 .box-reservation__Resevation, h2 {
