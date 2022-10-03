@@ -433,6 +433,8 @@ img {
   box-shadow: 0px 11px 15px rgba(107, 105, 105, 0.21);
   cursor: pointer;
   width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .cardMenu__nomMenu {
@@ -440,25 +442,26 @@ img {
   margin-left: 9px;
   font-weight: 700;
   padding-top: 7px;
-  display: flex;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
-
-.cardMenu__ingredientMenu {
+.cardMenu__nomMenu--ingredientMenu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   margin-left: 9px;
   font-weight: 200;
-  margin-top: 4px;
   font-size: small;
-  text-overflow: ellipsis;
+  margin-top: 4px;
 }
-.cardMenu__ingredientMenu .cardMenu__ingredientMenu--prixMenu {
+.cardMenu__nomMenu--ingredientMenu--dish {
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.cardMenu__nomMenu--prixMenu {
   margin-right: 10px;
   font-weight: 500;
-  position: relative;
 }
 
 .ItemBlocVert {
