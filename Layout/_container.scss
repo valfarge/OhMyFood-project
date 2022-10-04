@@ -1,44 +1,34 @@
-.container-localisation {
-    width: 100%;
-    height: 48px;
-    background-color: #f4f1f1;
-    border-top: 0.5px solid #a7a1a1;
-    @include FlexMid;
-    &__Paris{
-      font-family: "Roboto", sans-serif;
-    }
-  }
-
-.container-second{
-    text-align: center;
-    width: 100%;
-    height: 270px;
-    margin: 0;
-    background-color: #efefef;
-    padding-block: 12px;
-}
-.container-third{
-    height: 320px;
-  &__block{
-    @include mobile-only(){
-      display: flex;
-      margin: 10px;
-      margin-block: 3px;
-    }
-  }
-
-}
-.container-four{
-  height: 1144px;
-  background-color: #f4f1f1;
-  @include mobile-only(){
-    position: relative;
-    bottom: 95px;
-    height: 380px;
-  }
-}
 .ContainerAnimation{
-  @include mobile-only(){
+  @include desktop-only(){
     display: flex;
   }
+}
+
+.Container-menu__img{
+  @include Imgs;
+  object-position: bottom;
+  @include desktop-only(){
+      object-position: center;
+      height: 300px;
+  }
+}
+//PAGES RESTAUANT
+.SecondContainerMenu{
+  background-color: #efefef;
+  height: 900px;
+  border-radius: 33px 33px 0px 0px;
+  margin-top: -51px;
+  z-index: 1;
+  position: relative;
+  @include desktop-only(){
+      height: 400px;
+  }
+}
+.ContainerTitre{
+  @include DisplayJustify;
+  padding-top: 10px;
+  .ContainerTitre--menu{
+      font-size: 25px;
+  }
+  
 }

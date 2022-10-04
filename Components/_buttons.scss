@@ -19,7 +19,10 @@
     text-align: center;
     padding-top: 39px;
 }
-
+.btn-0__modif-1{
+    text-align: center;
+   
+}
 
 .btn{
     height: 60px;
@@ -32,7 +35,7 @@
     font-weight: 500;
     margin-block: 10px;
     @include DisplAlign;
-    @include mobile-only(){
+    @include desktop-only(){
         width: 25%;
     }
     &:hover{
@@ -45,7 +48,7 @@
 
 .span{
     margin-right: 27px;
-    @include mobile-only(){
+    @include desktop-only(){
         font-size: medium;
     }
 }

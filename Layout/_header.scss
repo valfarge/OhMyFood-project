@@ -1,5 +1,6 @@
-h1 {
-    text-align: center;
-    font-family: 'Shrikhand', cursive;
-    margin: auto;
+
+.header--menu{
+    @include DisplAlign;
+    justify-content: flex-start;
 }
+

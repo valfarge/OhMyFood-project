@@ -84,7 +84,7 @@
     animation-delay: 0s;
     opacity: 0;
     width: 100%;
-    @include mobile-only(){
+    @include desktop-only(){
         width: 34%;
         margin-inline: 10px;
     }
