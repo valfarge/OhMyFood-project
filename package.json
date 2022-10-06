@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prefix": "postcss ./index.css --use autoprefixer -d ./Components/prefixed"
   },
   "author": "",
+  "browserslist": "last 4 versions",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.54.9"
   }
 }
