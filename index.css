@@ -49,22 +49,6 @@
   }
 }
 
-.header-item {
-  height: 65px;
-  width: 100%;
-  -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  background-color: white;
-}
-
 .box-reservation {
   width: 90%;
   margin: auto;
@@ -255,6 +239,22 @@ h4 {
   justify-content: flex-start;
 }
 
+.header-item {
+  height: 65px;
+  width: 100%;
+  -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: white;
+}
+
 @media (min-width: 1040px) {
   .ContainerAnimation {
     display: flex;
@@ -354,8 +354,14 @@ h4 {
   padding-top: 39px;
 }
 
-.btn-0__modif-1 {
+.btn-0__modif--1 {
   text-align: center;
+  margin: 25px;
+}
+@media (min-width: 1040px) {
+  .btn-0__modif--1 {
+    margin: 0;
+  }
 }
 
 .btn {
@@ -371,10 +377,8 @@ h4 {
   display: flex;
   align-items: center;
 }
-@media (min-width: 1040px) {
-  .btn {
-    width: 25%;
-  }
+.btn c {
+  width: 25%;
 }
 .btn:hover {
   background: linear-gradient(356deg, #a16be0 33%, #ff93e1 100%);
