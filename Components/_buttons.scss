@@ -39,7 +39,7 @@
     font-weight: 500;
     margin-block: 10px;
     @include DisplAlign;
-    c{
+    @include desktop-only(){
         width: 25%;
     }
     &:hover{

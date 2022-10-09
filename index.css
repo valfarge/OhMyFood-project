@@ -377,8 +377,10 @@ h4 {
   display: flex;
   align-items: center;
 }
-.btn c {
-  width: 25%;
+@media (min-width: 1040px) {
+  .btn {
+    width: 25%;
+  }
 }
 .btn:hover {
   background: linear-gradient(356deg, #a16be0 33%, #ff93e1 100%);
