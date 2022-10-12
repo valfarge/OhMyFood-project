@@ -1,0 +1,78 @@
+.cardMenu{
+    height: 56px;
+    box-shadow: 0px 11px 15px rgb(107 105 105 / 21%);
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+   
+}
+.cardMenu__nomMenu{
+    font-family: "Roboto", sans-serif;
+    margin-left: 9px;
+    font-weight: 700;
+    padding-top: 7px;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    &--ingredientMenu{
+        display: flex;
+        justify-content: space-between;
+        @include Margin-Font;
+        font-weight: 200;
+        font-size: small;
+        margin-top: 4px;
+        &--dish{
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+        }
+    }
+    &--prixMenu{
+        margin-right: 10px;
+        font-weight: 500;
+    }
+}
+.Bloc-Card {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+  }
+.Bloc-Card:hover .ItemBlocVert {
+    transition: 1s ease;
+    width: 50px;
+    visibility: visible;
+}
+.Bloc-Card:hover .ItemBlocVert .fa-circle-check {
+    animation-name: rotates;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+  }
+  .ItemBlocVert {
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    width: 0px;
+    height: 58px;
+    font-size: 20px;
+    display: flex;
+    visibility: hidden;
+    color: $mint;
+  }
+
+
+.fa-circle-check{
+    background-color: white;
+    font-size: x-large;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    font-size: x-large;
+    height: 23px;
+    width: 22px;
+    border: -2px solid;
+    border-radius: 31px;
+}

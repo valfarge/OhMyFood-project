@@ -3,6 +3,9 @@ h1 {
     font-family: 'Shrikhand', cursive;
     margin: auto;
 }
+h2{
+    @include Typo;
+}
 
 h3{
     font-family: 'Shrikhand', cursive;
