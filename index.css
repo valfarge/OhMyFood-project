@@ -117,14 +117,6 @@ img {
   font-weight: 200;
 }
 
-.box-reservation__Resevation {
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  padding-top: 35px;
-  margin-left: 15px;
-}
-
 .box-sous-titre__soustitre {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -264,6 +256,12 @@ h4 {
   top: 0;
   z-index: 2;
   background-color: white;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .loader-container {
