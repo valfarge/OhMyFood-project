@@ -114,7 +114,7 @@ img {
 .cardRestaurant__description .cardRestaurant__description--lieux {
   font-family: "Roboto", sans-serif;
   margin-left: 9px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .box-sous-titre__soustitre {
@@ -210,7 +210,7 @@ img {
   font-size: x-large;
   height: 23px;
   width: 22px;
-  border: 2px solid;
+  border: -2px solid;
   border-radius: 31px;
 }
 
@@ -229,13 +229,18 @@ h2 {
 }
 
 h3 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
 h4 {
+  font-family: "Roboto", sans-serif;
   font-size: small;
   padding-left: 10px;
+}
+
+body {
+  margin: auto;
 }
 
 .header--menu {
@@ -331,21 +336,18 @@ h4 {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 17px;
-  color: grey;
 }
 
 .fa-bars {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 17px;
-  color: grey;
 }
 
 .fa-store {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 17px;
-  color: grey;
 }
 
 .fa-heart {
@@ -368,7 +370,7 @@ h4 {
   font-weight: 500;
   box-shadow: 0px 11px 15px rgba(107, 105, 105, 0.21);
 }
-.btn-0:active {
+.btn-0:hover {
   box-shadow: 0px 11px 15px rgb(107, 105, 105);
   background: linear-gradient(356deg, #a16be0 33%, #ff93e1 100%);
 }
@@ -407,7 +409,10 @@ h4 {
   }
 }
 .btn:hover {
-  background: linear-gradient(356deg, #a16be0 33%, #ff93e1 100%);
+  background: linear-gradient(356deg, #ae80e5 33%, #ffe9f9 100%);
+}
+.btn:hover .fa-solid {
+  color: #9356DC;
 }
 
 .span {
@@ -439,18 +444,28 @@ h4 {
 .footer--element {
   margin: 10px;
 }
+.footer--element > p {
+  font-family: "Shrikhand", cursive;
+  margin-left: 9px;
+}
 
 .footer--element--modifier {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   font-size: small;
+  margin-block: -20px;
+  margin-left: 10px;
 }
 
 a {
   text-decoration: none;
   border: none;
   color: white;
+}
+
+.fin h4 {
+  font-weight: 300;
 }
 
 @keyframes loader-fin {
@@ -506,7 +521,7 @@ a {
 }
 .A1, .A2, .A3 {
   animation-name: Anim;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   animation-fill-mode: both;
   animation-iteration-count: 1;

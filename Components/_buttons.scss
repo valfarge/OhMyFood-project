@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     box-shadow: 0px 11px 15px rgb(107 105 105 / 21%);
-    &:active{
+    &:hover{
         box-shadow: 0px 11px 15px rgb(107, 105, 105);
         background: linear-gradient(356deg,
         lighten(#9356DC, 5%) 33%,
@@ -42,13 +42,19 @@
     @include desktop-only(){
         width: 25%;
     }
-    &:hover{
+    &:hover {
         background: linear-gradient(356deg,
-        lighten(#9356DC, 5%) 33%,
-        lighten(#FF79DA, 5%) 100%);
+        lighten(#9356DC, 10%) 33%,
+        lighten(#FF79DA, 22%) 100%);
     }
+    &:hover .fa-solid{
+        color:#9356DC;
+    }
+   
     
+
 }
+
 
 .span{
     margin-right: 27px;
